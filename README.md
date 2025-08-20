@@ -12,7 +12,7 @@ This setup is the quickest path to getting a site live on your own domain withou
 - S3 buckets
     - Created two buckets to match the domain names:
         - camexplores.click (site bucket)
-- Site bucket configuration (example.com)
+- Site bucket configuration (camexplores.click )
     - Disabled Block Public Access for the bucket (required for S3 website hosting).
     - Enabled Static website hosting; set:
         - Index document: index.html
@@ -34,15 +34,15 @@ This setup is the quickest path to getting a site live on your own domain withou
 
 }
 
-- Redirect bucket configuration (www.example.com)
-    - Enabled Static website hosting → Redirect requests to example.com (protocol: http).
+- Redirect bucket configuration (camexplores.click )
+    - Enabled Static website hosting → Redirect requests to camexplores.click  (protocol: http).
 - Route 53 records
     - Created A (Alias) record for the apex camexplores.click  → S3 website endpoint of the site bucket (choose the Website endpoint, not the S3 API).
     - Created A (Alias) (or CNAME) for camexplores.click → S3 website endpoint of the redirect bucket.
 - Validation
-    - Tested http://example.com and http://www.example.com for correct content and redirect.
+    - Tested camexplores.click for correct content and redirect.
     - Synced updates with:
-      (bash) aws s3 sync ./site s3://example.com --delete
+      (bash) aws s3 sync ./site s3://camexplores.click  --delete
 
 
 ## Impact 

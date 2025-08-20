@@ -37,8 +37,8 @@ This setup is the quickest path to getting a site live on your own domain withou
 - Redirect bucket configuration (www.example.com)
     - Enabled Static website hosting → Redirect requests to example.com (protocol: http).
 - Route 53 records
-    - Created A (Alias) record for the apex example.com → S3 website endpoint of the site bucket (choose the Website endpoint, not the S3 API).
-    - Created A (Alias) (or CNAME) for www.example.com → S3 website endpoint of the redirect bucket.
+    - Created A (Alias) record for the apex camexplores.click  → S3 website endpoint of the site bucket (choose the Website endpoint, not the S3 API).
+    - Created A (Alias) (or CNAME) for camexplores.click → S3 website endpoint of the redirect bucket.
 - Validation
     - Tested http://example.com and http://www.example.com for correct content and redirect.
     - Synced updates with:

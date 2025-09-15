@@ -1,4 +1,4 @@
-# Simple-Web-App-Project
+# AWS Simple-Web-App-Project
 
 ## Goal
 Launch a static website on a custom domain using Amazon S3 for hosting and Route 53 for DNS—minimal, low-cost, and fast to deploy.
